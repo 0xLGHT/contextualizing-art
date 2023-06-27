@@ -57,3 +57,11 @@ window.onload = function() {
     });
 }
 
+document.getElementById('view-all-button').addEventListener('click', function() {
+    var extraItems = document.getElementsByClassName('extra-items');
+    for (var i = 0; i < extraItems.length; i++) {
+        extraItems[i].style.display = 'grid';
+    }
+    // Remove the button after showing all items
+    this.style.display = 'none';
+});

@@ -117,6 +117,16 @@ button:hover {
     margin-top: 20px;
 }
 
+.extra-items {
+    display: none;
+}
+
+#view-all-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* adjust as needed */
+}
+
 
 @media (max-width: 728px) {
     h3 {
