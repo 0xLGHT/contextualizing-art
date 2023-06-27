@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=SF+UI+Text:wght@400;600&display=swap');
+
+* {
+    font-family: 'SF UI Text', sans-serif;
+}
+
+body {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+#main-image {
+    padding-top: 20px;
+}
+
+.center-column {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* gallery CSS */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    width: 100%;
+    max-width: 1200px;
+    height: 80vh;
+}
+
+.image-column, .text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.image-column img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: opacity 1s ease-in-out;
+}
+
+.text-column {
+    margin-left: 50px;
+    align-items: center;
+}
+
+.text-column h1 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.text-column p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #000;
+    transition: color 0.5s ease-in-out;
+}
+
+button:hover {
+    color: #adadad;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+
+/*collecting css*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%; /* Adjust this to your liking */
+    margin: auto; /* Centers the grid container */
+    padding: 20px; /* Adds padding around the grid container */
+    padding-top: 50px;
+}
+
+.grid-item {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.2);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.iframe-container {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 728px) {
+    h3 {
+        display: none;
+    }
+
+    .L1 {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .image-column, .text-column {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .image-column img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-column {
+        margin-left: 0;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
