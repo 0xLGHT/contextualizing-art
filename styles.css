@@ -78,7 +78,6 @@ body {
     }
 
     #navbar {
-
         gap: 10px;
     }
 
@@ -90,5 +89,8 @@ body {
     #navbar img {
         width: 20px;
         height: 20px;
+    }
+    body {
+        color: #000;
     }
 }

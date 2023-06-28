@@ -77,4 +77,7 @@ body {
     .sub-title, .portfolio-link {
         font-size: 1em;
     }
+    body {
+        background-color: #fff;
+    }
 }
