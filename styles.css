@@ -33,21 +33,7 @@ body {
     margin-bottom: -5px;
 }
 
-#btn-1 button {
-    margin-left: -70px;
-}
 
-#btn-2 button {
-    margin-left: 200px;
-}
-
-#btn-3 button {
-    margin-left: 50px;
-}
-
-#btn-4 button {
-    margin-left: 280px;
-}
 
 #navbar {
     margin-top: 50px;
@@ -92,7 +78,7 @@ body {
     }
 
     #navbar {
-        flex-direction: column;
+
         gap: 10px;
     }
 
@@ -102,7 +88,7 @@ body {
     }
 
     #navbar img {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 }
